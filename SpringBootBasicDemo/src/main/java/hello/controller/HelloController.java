@@ -21,6 +21,7 @@ public class HelloController {
 	@RequestMapping("/")
 	public String index() {
 		Person person=new Person("nameeee", 111);
+		System.out.println("Person Object created");
 		return "Greetings from Spring Boot!"+person.toString();
 	}
 
